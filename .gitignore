@@ -1,6 +1,6 @@
 images/
 **__pycache__
-models/
+# models/
 *.gitignore*
 *README.md*
 *.swp
