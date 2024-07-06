@@ -8,9 +8,9 @@ import scipy
 import scipy.io
 import scipy.misc
 
-from lib.model_test import D2Net
-from lib.utils import preprocess_image
-from lib.pyramid import process_multiscale
+from .model_test import D2Net
+from .utils import preprocess_image
+from .pyramid import process_multiscale
 
 import cv2
 import matplotlib.pyplot as plt
