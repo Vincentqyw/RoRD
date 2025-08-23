@@ -94,9 +94,9 @@ class D2Net(nn.Module):
 
         if model_file is not None:
             if use_cuda:
-                self.load_state_dict(torch.load(model_file)['model'])
+                self.load_state_dict(torch.load(model_file, weights_only=False)['model'])
             else:
-                self.load_state_dict(torch.load(model_file, map_location='cpu')['model'])
+                self.load_state_dict(torch.load(model_file, map_location='cpu', weights_only=False)['model'])
 
     def forward(self, batch):
         b = batch['image1'].size(0)
